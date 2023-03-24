@@ -1,0 +1,547 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/* ========================================head======================================================== */
+.head{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    opacity: 0.8;
+}
+.head .fa-solid {
+    display: none;
+}
+.head p{
+    margin: auto 0px;
+    color: #ccc;
+}
+.head-right{
+    display: flex;
+}
+.head-right p{
+    padding-left: 15px;
+}
+/* ===========================BACKGROUND-IMG================= */
+.background-one {
+    background-image: url(./images/bg.PNG);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.background-one .text {
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    color: white;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #de155f;
+}
+/* <!-- ------=============For those---=== ===--> */
+.For-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 200px;
+
+}
+.for-left {
+    width: 50%;
+    /* background-color: red; */
+    /* float: left; */
+    padding-left: 50px;
+    padding-top: 50px;
+
+}
+.for-left h3 {
+    line-height: 35px;
+}
+.for-left p {
+    color: #151313;
+    line-height: 25px;
+}
+.for-right{
+    width: 50%;
+    padding-left: 150px;
+    /* background-color: pink; */
+}
+.for-right img {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 80%;
+}
+/* =======.For-content=== */
+
+.For-content:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.For-content:nth-child(2) >.for-right{
+    width: 50%;
+    /* padding-left: 0px; */
+    /* background-color: pink; */
+}
+.For-content:nth-child(2) >.for-right img {
+    margin-top: 20px;
+    width: 80%;
+    margin-left:-100px;
+ 
+}
+.For-content:nth-child(2) .for-left{
+    width: 50%;
+    /* background-color: rgb(134, 30, 30); */
+    padding-left: 150px;
+}
+/* ------------------------footer--------- */
+.footer {
+    color: white;
+    background-color: black;
+    height: 100px;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+/* =============responsive============================================ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* CSS */ 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* ========================================head======================================================== */
+    .head{
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        background-color: black;
+        opacity: 0.8;
+        font-size: 10px;
+    }
+    .head .fa-solid {
+        color: white;
+        font-size: 15px;
+         display: flex;
+    }
+    .head p{
+        margin: auto 0px;
+        color: #ccc;
+        
+        
+    }
+    .head-right{
+        display: flex;
+     
+    }
+    .head-right p{
+        padding-left: 15px;
+        display: none;
+    }
+    /* ===========================BACKGROUND-IMG================= */
+    .background-one {
+        background-image: url(./images/bg.PNG);
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    
+    }
+    .background-one .text {
+        /* background-color: rebeccapurple; */
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        right: 0%;
+        text-align: center;
+        color: white;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background-color: #de155f;
+    }
+    /* <!-- ------=============For those---=== ===--> */
+    .For-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: none;
+        padding: 0;
+    
+    }
+    .for-left {
+        width: 100%;
+        margin-top: 50px;
+        font-weight: 700px;
+        /* background-color: red; */
+        /* float: left; */
+        padding-left: 0px;
+        padding-top: 0px;
+        float: left;
+        padding-left: 30px;
+    
+    }
+    .for-left h3 {
+        line-height: 35px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .for-left p {
+        color: #151313;
+        line-height: 25px;
+    }
+    .for-right{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        /* background-color: pink; */
+    }
+    .for-right img {
+        margin-top: 20px;;
+        border-radius: 50%;
+        width: 80%;
+    }
+    /* =======.For-content=== */
+    
+    .For-content:nth-child(2){
+        display: flex;
+       flex-direction: column-reverse;
+    }
+    .For-content:nth-child(2) >.for-right{
+        width: 100%;
+        /* padding-left: 0px; */
+        /* background-color: pink; */
+    }
+    .For-content:nth-child(2) >.for-right img {
+        margin-top: 50px;
+        width: 80%;
+        margin-left:0px;
+     
+    }
+    .For-content:nth-child(2) .for-left{
+        width: 100%;
+        /* background-color: rgb(134, 30, 30); */
+        padding-left: 0px;
+        float: left;
+        padding: 30px;
+    }
+    /* ------------------------footer--------- */
+    .footer {
+        color: white;
+        background-color: black;
+        height: 100px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+        /* CSS */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* ========================================head======================================================== */
+        .head{
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0px;
+            background-color: black;
+            opacity: 0.8;
+            font-size: 10px;
+        }
+        .head .fa-solid {
+            color: white;
+            font-size: 15px;
+             display: flex;
+        }
+        .head p{
+            margin: auto 0px;
+            color: #ccc;
+        }
+        .head-right{
+            display: flex;
+        }
+        .head-right p{
+            padding-left: 15px;
+            display: none;
+        }
+        /* ===========================BACKGROUND-IMG================= */
+        .background-one {
+            background-image: url(./images/bg.PNG);
+            height: 50vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        
+        }
+        .background-one .text {
+            /* background-color: rebeccapurple; */
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            left: 0%;
+            right: 0%;
+            text-align: center;
+            color: white;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            background-color: #de155f;
+        }
+        /* <!-- ------=============For those---=== ===--> */
+        .For-content {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: none;
+            padding: 0;
+        
+        }
+        .for-left {
+            width: 100%;
+            margin-top: 50px;
+            font-weight: 700px;
+            /* background-color: red; */
+            /* float: left; */
+            padding-left: 0px;
+            padding-top: 0px;
+            float: left;
+            padding-left: 30px;
+        
+        }
+        .for-left h3 {
+            line-height: 35px;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .for-left p {
+            color: #151313;
+            line-height: 25px;
+        }
+        .for-right{
+            width: 100%;
+            padding-left: 0px;
+            text-align: center;
+            /* background-color: pink; */
+        }
+        .for-right img {
+            margin-top: 20px;
+            border-radius: 50%;
+            width: 80%;
+        }
+        /* =======.For-content=== */
+        
+        .For-content:nth-child(2){
+            display: flex;
+           flex-direction: column-reverse;
+        }
+        .For-content:nth-child(2) >.for-right{
+            width: 100%;
+            /* padding-left: 0px; */
+            /* background-color: pink; */
+        }
+        .For-content:nth-child(2) >.for-right img {
+            margin-top: 20px;
+            width: 80%;
+            margin-left:0px;
+         
+        }
+        .For-content:nth-child(2) .for-left{
+            width: 100%;
+            /* background-color: rgb(134, 30, 30); */
+            padding-left: 0px;
+            float: left;
+            padding: 30px;
+        }
+        /* ------------------------footer--------- */
+        .footer {
+            color: white;
+            background-color: black;
+            height: 100px;
+            /* position: relative; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* ========================================head======================================================== */
+    .head{
+        background-color: #ccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        background-color: black;
+        opacity: 0.8;
+        font-size: 10px;
+    }
+    .head p{
+        margin: auto 0px;
+        color: #ccc;
+    }
+    .head-right{
+        display: flex;
+    }
+    .head .fa-solid {
+        color: white;
+        font-size: 15px;
+         display: flex;
+    }
+    .head-right p{
+        padding-left: 15px;
+        display: none;
+    }
+    /* ===========================BACKGROUND-IMG================= */
+    .background-one {
+        background-image: url(./images/bg.PNG);
+       height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    
+    }
+    .background-one .text {
+        /* background-color: rebeccapurple; */
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        right: 0%;
+        text-align: center;
+        color: white;
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background-color: #de155f;
+    }
+    /* <!-- ------=============For those---=== ===--> */
+    .For-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: none;
+        padding: 0;
+    
+    }
+    .for-left {
+        width: 100%;
+        margin-top: 50px;
+        font-weight: 700px;
+        /* background-color: red; */
+        /* float: left; */
+        padding-left: 0px;
+        padding-top: 0px;
+        float: left;
+        padding-left: 30px;
+    
+    }
+    .for-left h3 {
+        line-height: 35px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .for-left p {
+        color: #151313;
+        line-height: 25px;
+    }
+    .for-right{
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        /* background-color: pink; */
+    }
+    .for-right img {
+        margin-top: 20px;
+        border-radius: 50%;
+        width: 80%;
+    }
+    /* =======.For-content=== */
+    
+    .For-content:nth-child(2){
+        display: flex;
+       flex-direction: column-reverse;
+    }
+    .For-content:nth-child(2) >.for-right{
+        width: 100%;
+        /* padding-left: 0px; */
+        /* background-color: pink; */
+    }
+    .For-content:nth-child(2) >.for-right img {
+        margin-top: 20px;
+        width: 80%;
+        margin-left:0px;
+     
+    }
+    .For-content:nth-child(2) .for-left{
+        width: 100%;
+        /* background-color: rgb(134, 30, 30); */
+        padding-left: 0px;
+        float: left;
+        padding: 30px;
+    }
+    /* ------------------------footer--------- */
+    .footer {
+        color: white;
+        background-color: black;
+        height: 100px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+   
+  }
